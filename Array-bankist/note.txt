@@ -1,0 +1,57 @@
+--> splice Mutate array
+
+--> reverse Mutate array
+
+--> concat won't mutate
+
+--> at method also works with strings.
+
+if you want to get to the last element of an array,
+or basically start counting from the end of an array,
+then you should probably start using the At Method.
+Also, if you want to do something called "method chaining" then the At Method is also perfect for that.So basically combining multiple methods all at the same time.And then, it's quite helpful to use the At Method instead of the brackets notation[] .
+
+--> continue and break statements doesn't work on forEach method.so,should use for of method when need to work with break/continue.
+
+forEach is technically a higher order function as we learned which requires a callback function in order to tell it what to do.
+
+the forEach method who calls callback function in each iteration.And as it calls this function it also passes in the current element of the array,but actually that's not all it passes in in fact forEach passes in the current element,the index and the entire array that we are looping. as always the names here do not matter at all,but what does matter is the order.So the first parameter always needs to be the current element,the second parameter always the current index and the third one always the entire array that we are looping over.
+
+when we use the entries in the for off loop
+then the first element is the index and the second value is the current array element.
+
+--> a set doesn't have keys And it doesn't have indexes either.
+
+we cannot have the duplicate parameter name And so we can just use an underscore,which in JavaScript means a throwaway variable.So that means a variable that is completely unnecessary.
+
+-->  map is actually similar to the forEach method but with the difference that map creates a brand new array based on the original array.So essentially the map method takes an array,loops over that array and in each iteration,it applies a callback function that we specify on our code to the current array element.
+
+in map method, the original array not mutate at all 
+And so indeed the map method really only returns in new array with the new elements.
+
+it's completely acceptable to have return statements or even more in the same function as long as only one of them is executed
+
+--> filter method, is used to filter for elements
+in the original array which satisfy a certain condition.
+
+-->the reduce method which we use to boil down all the elements of the original array into one single value.
+
+--> Filter returns all the elements that match the condition while the Find method only returns the first one, the Filter method returns a new array while Find only returns the element itself and not an array .
+
+--> sort method actually mutates the original array.
+the sort method does the sorting based on strings,
+if you have a mixed array,like with strings and numbers together,then this is not gonna work and I advise you to simply not to use the sort method in these cases anyway.
+
+-->
+
+-->
+
+-->
+
+-->
+
+-->
+
+-->
+
+-->

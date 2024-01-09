@@ -1,0 +1,25 @@
+-->here at first, the page scroll to back to the top and that is because this is actually now a link and not a button and on the link when we have this hash(#) here as the hyperlink. So as href(in the open account link), then that will make the page jump to the top. So that's the default behavior.
+
+-->Now remember that a nodelist is not an array, but still it does have default foreach method. So it doesn't have most of the methods that arrays have, but foreach is one of the methods that in nodelist has as well.
+
+-->the prepend and append methods not only to insert elements but also to move them. that is because a DOM element is unique. So it can always only exist at one place at a time.
+
+--> remember that in an event handler that this keyword, points always to the element on which that event handler is attached.
+
+--> querySelector is available on both the document and element types
+
+-->the mouse enter event, and mouseover is actually similar to mouseenter, with the big difference that mouseenter does not bubble,
+
+-->
+
+-->
+
+-->
+
+-->
+
+-->
+
+-->
+
+-->

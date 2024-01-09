@@ -1,0 +1,10 @@
+--> type conversion is when we manually convert
+from one type to another.
+One the other hand, type coercion
+is when JavaScript automatically converts types
+behind the scenes for us.not a number(NaN) actually means invalid number.JavaScript can only convert to three types.So we can convert to a number, to a string or to a Boolean.
+
+-->
+-->
+-->
+-->

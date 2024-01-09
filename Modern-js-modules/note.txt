@@ -1,0 +1,11 @@
+--> imports are not copies of the export. They are instead like a live connection
+
+-->it's very important to remember that using top-level await, so await outside of any async function will block the entire module in a way that we really couldn't block code execution before. And so this is not only a really helpful tool, but also one that we need to use with great care.
+
+-->
+
+-->
+
+-->
+
+-->

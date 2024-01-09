@@ -1,0 +1,38 @@
+--> JavaScript does not have passing by reference,only passing by value,even though it looks like it's passing by reference.
+
+--> there seems to be some confusion between first-class functions and higher order functions.
+Some people think that they are the same thing.
+But actually they mean different things.So, first class functions is just a feature that a programming language either has or does not have.All it means is that all functions are values.
+That's it.There are no first class functions in practice, okay?It's just a concept.There are however higher order functions in practice,which are possible because the language supports
+first class functions.So it's a subtle difference,
+
+-->Why our callback functions so much used in JavaScript and why are they so helpful? Well, the first big advantage of this is that it makes it easy to split up or code into more reusable and interconnected parts.But there is a second and way more important advantage,which is the fact that callback functions allow us to create abstraction. abstraction is something really important in programming. So basically what abstract means, is that we hide the detail of some code implementation because we don't really care about all that detail. And this allows us to think about problems at a higher more abstract level. And so that's why it's called an abstraction.
+
+-->in a regular function call,the this keyword points to undefined,at least in strict mode.
+
+--> remember that a function is really just an object and objects have methods and therefore, functions can have methods too
+and the call method is one of them.in the call method,the first argument is exactly what we want the this keyword to point to and the rest of the arguments. we have a way of manually manipulating the this keyword using the call method.
+
+--> there is a similar method to the call method,
+which is called the apply method.And the apply method does basically exactly the same thing.The only difference is that apply does not receive a list of arguments after the this keyword,it's gonna take an array of the arguments,
+
+--> just like the call method,bind also allows us to manually set this keywords for any function call.Now, the difference is that bind does not immediately call the function.Instead it returns a new function where this keyword is bound.So it's set to whatever value we pass into bind.
+
+--> partial application is another big use case for the bind method.And in this case of partial application,many times we are not even interested in this keywords,but we still use bind for this, Now, remember that partial application means that we can preset parameters, 
+
+--> we already know that functions create scopes. a closure makes a function remember all the variables that existed at the function's birthplace essentially,Any function always has access to the variable environment of the execution context in which the function was created.The closure is then basically this variable environment attached to the function,exactly as it was at the time and place that the function was created.
+
+a closure is the closed over variable environment of the execution context in which a function was created even after that execution context is gone,
+
+a closure gives a function access to all the variables of its parent function.So the function in which it is defined even after that parent function has returned.So the function keeps a reference to its outer scope even after that outer scope is gone, which basically preserves the scope chain throughout time.
+
+a closure makes sure that a function does never lose connection to the variables that existed at the function's birthplace.
+
+we need to understand that we do not have to create closures manually.So instead, this is something that JavaScript does completely automatically, we don't have to do anything.Also, there is no way for us to explicitly access closed over variables.That's because closures are not like a tangible thing.They're not like an object or so that we can access.So we cannot just reach into a closure and take variables from it.That's impossible because a closure is just an internal property of a function.We can observe that a closure happens because functions magically keep having access to variables that should no longer exist,but we cannot directly access these variables .However, what we can do is to actually take a look at this internal property.
+
+
+--> whenever you see these double brackets [[]] here,that means that it is an internal property,which we cannot access from our code.
+
+-->
+
+-->

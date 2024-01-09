@@ -1,0 +1,11 @@
+--> isFinite method is indeed the best way of checking if a value is a number.So a real number, not a string.
+
+--> the parseFloat function should be your go-to whenever you need to read a value out of a string.For example, coming from CSS.
+
+--> So basically floor and trunc, both cut off the decimal part when we are dealing with positive numbers.However, for negative numbers, it doesn't work this way.
+
+--> you should really only use numeric separators,when you are writing down numbers Really in the code.If you need to store a number in a string,for example, in an API,or if you get a number as a string from an API,you should not use underscores in there,because then JavaScript will not be able to parse the number correctly out of that string.
+
+-->
+
+-->

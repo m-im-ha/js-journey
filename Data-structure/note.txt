@@ -1,0 +1,50 @@
+-->destructuring is to break a complex data structure down into a smaller data structure like a variable. So for arrays we use destructuring to retrieve elements from the array and store them into variables in a very easy way.
+
+Now, since in an object,the order of elements does not matter,we don't need to manually skip elements
+like we did in an array.
+
+-->the spread operator is actually a bit similar to destructuring,because it also helps us get elements out of arrays.Now, the big difference is that the spread operator takes all the elements from the array and it also doesn't create new variables. And as a consequence, we can only use it in places where we would otherwise write values separated by commas.the spread operator works on all so-called iterables.Now what is an iterable? Well, there are different iterables in JavaScript.just know that iterables are things like all arrays, strings, maps, or sets,but not objects.So basically, most of the built-in data structures in JavaScript are now iterables, but except objects.
+
+multiple values separated by a comma
+are usually only expected when we pass arguments into a function,or when we build a new array.so we use the spread operator to build new arrays or to pass multiple values into a function. 
+
+--> the rest pattern uses the exact same syntax like spread however, to collect multiple elements
+and condense them into an array.so that's really the opposite of spread The spread operator is to unpack an array while rest is to pack elements into an array
+
+the rest element must be the last element.
+there can only ever be one rest in any destructuring assignment.
+
+the rest syntax is taking multiple numbers or multiple values and then packs them all into one array.So, once more it is doing the opposite of the spread operator so with the spread operator we expand with the rest syntax we compress so here it's called rest arguments
+
+
+-->the AND operator short circuits,when the first value is falsy.And then immediately returns that falsy value
+without even evaluating the second operand.So again, that's exactly the opposite of what happens with the OR operator,which short circuits when the first operator is true.the AND operator is only true if all the operands are true.the OR operator will return the first truthy value of all the operands,or simply the last value if all of them are falsy.On the other hand,the AND operator will return the first falsy value
+or the last value if all of them are truthy.And as for practical applications,we can use the OR operator to set default values,and we can use the AND operator to execute code in the second operand if the first one is true.
+
+--> nullish values are null and undefined.So basically, for the nullish coalescing operator, the zero and the empty string are not falsy values and instead truthy values.
+
+-->great about the for-of loop is that we can still use the continue and break keywords.
+
+-->object literal because has curly braces.
+
+-->a property exists if it's not null and not undefined.So if it's zero or the empty string,then it still exists of course.
+
+-->in sets there are actually no indexes.And in fact, there is no way of getting values out of a set.And if we think about this,then it makes sense.So there's really no need for getting data out
+of a set. That's because if all values are unique,
+and if their order does not matter,then there is no point of retrieving values out of a set.All we need to know is whether a certain value is in the set or not.And that's why we have the has method.If your goal is to actually store values in order
+and then retrieve it,then the best use case, is to just use an array.You wouldn't use a set for that.And so again, there's no need for getting values out of a set,because if you need it, then you will just use an array.
+
+sets are also iterables.And therefore, we can loop over them.
+
+the main use case of sets is actually to remove duplicate values of arrays.
+
+--> in JavaScript,a map is a data structure that we can use to map values to keys.So, just like an object data is stored in key value pairs in maps.Now, the big difference between objects and maps
+is that in maps, the keys can have any type and this can be huge.So, in objects, the keys are basically always strings.
+
+keep this small trick here in mind,whenever you need a map,when you already have an object,because its so easy to convert object to map.
+
+convert map to array by simply building new array and then unpacking again,using the spread operator.
+
+-->
+
+-->

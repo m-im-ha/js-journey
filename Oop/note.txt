@@ -1,0 +1,38 @@
+-->Now an arrow function will actually not work as a function constructor. And that's because it doesn't have its own this keyword and we need that, So only function declarations and function expressions use. the only difference between a regular function, and a constructor function is that we call the constructor using the new keyword.
+
+--> a class is like a blueprint which is a theoretical plan and that we use to build many houses in the real world. And in the same way, the theoretical class can be used to create actual objects which are called instances and which we can then use in our code. And this process of creating an instance is called instantiation.
+
+--> all objects in JavaScript are linked to a certain prototype object, the prototype object contains methods and properties that all the objects that are linked to that prototype can access and use. And this behavior is usually called prototypal inheritance.in this case it's basically an instance inheriting from a class.
+
+--> own properties are only the ones that are declared directly on the object itself. So, not including the inherited properties.
+
+--> we already know that all the DOM elements are behind the scenes objects.
+
+--> behind the scenes, classes are still functions, and therefore, we have class expressions and class declarations.
+
+-->
+
+-->classes are not hoisted.
+
+-->classes are also first-class citizens.that means
+ we can pass them into functions and also return them from functions.
+
+-->the body of a class is always executed in strict mode.
+
+
+-->remember that in a regular function call, the this keyword is set to undefined.
+
+--> each object created by the constructor function will get access to all the methods of the prototype property. all objects in JavaScript have a prototype.the curly braces are just like a shortcut to writing new object,
+
+-->function itself is also an object.And so therefore it also has a prototype
+
+--> classes in JavaScript do not work like traditional classes in other languages like Java or C++.
+
+
+-->Object.create creates a new object, and the prototype of that object will be the object that we passed in
+
+-->
+
+-->
+
+-->

@@ -1,0 +1,23 @@
+--> synchronous code simply means that the code is executed line by line,
+
+--> asynchronous code is executed after a task that is running in the background finishes execution. callback functions alone do not make code asynchronous,event listeners alone do not make code asynchronous.
+
+--> https://countries-api-836d.onrender.com/countries/
+
+--> explanation of line 120 to 128 :::: let's recap what happened here And the first part here I think, is pretty straight forward which is this fetch function here returning a promise. And then we handled that promise using the then method, right. But then to actually read the data from the response, we need to call the json method on that response object. Now this itself will also return a promise. And so if we then return that promise from this method then basically all of this becomes a new promise itself. And so since this is a promise we can then again, call the then method on that. And so then again we have a callback and this time, we get access to the data because the resolved value of this promise here is going to be the data itself.
+
+-->actually the then method always returns  promise, no matter if we actually return anything or not. But if we do return a value, then that value will become the fulfillment value of the return promise.
+
+-->an async function always returns a promise
+
+--> keep in mind that a async, await is just synthetic sugar over consuming promises. So it's a bit like classes in JavaScript, which also hides the true nature of how things work behind the scenes.
+
+--> if one of the promises rejects, then the whole promise.all actually rejects as well. So we say that promise.all short circuits when one promise rejects. So again, because one rejected promise is enough for the entire thing to reject as well.
+
+--> in Promised.race, we only get one result and not an array of the results of all the three. Now a promise that gets rejected can actually also win the race. And so we say that Promise.race short circuits whenever one of the promises gets settled. And so again, that means no matter if fulfilled or rejected. in the real world Promise.race is actually very useful to prevent against never ending promises or also very long running promises. Promise.all will short circuit as soon as one promise rejects, but Promise.allSettled, simply never short circuits.
+
+-->
+
+-->
+
+-->

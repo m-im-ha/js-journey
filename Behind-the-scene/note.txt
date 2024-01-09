@@ -1,0 +1,31 @@
+-->variables in a global scope are accessible from everywhere because they are always at the top of the scope chain.
+
+--> variables declared with the var keyword
+are function scoped.So they simply ignore the block, because they are not block scoped at all.
+They're just function scoped.var variables do not care about blocks at all.
+
+functions are block scoped.But remember that that is only true for strict mode.
+
+scope chain isn't necessary at all, if the variable that we're looking for is already in the current scope.
+
+-->variables declared with var,will create a property on the global window object And that can have some implications in some cases.
+
+-->this keyword will never point to the function in which we are using it.Also, the this keyword will never point to the variable environment of the function.
+
+-->Arrow function does not get its own this keyword.So instead the arrow function simply uses the lexical this keyword, which means that it uses the this keyword of its parent function or of its parents scope. basically an arrow function inherits the this keyword from the parent scope.
+
+--> you should never ever use an arrow function as a method.
+
+--> inside a regular function call the this keyword must be undefined. just like the this keyword, the arguments keyword is only available in regular functions and in function expressions, also in function declarations,but not in an arrow function.
+
+--> variables declared with var, will create a property on the global window object. variables declared with let or const do not create properties on the window object.
+
+--> it's a misconception that all variables declared with const are immutable.that is only true for primitive values, but not for reference values.
+
+--> object.assign only works on the first level.
+
+-->
+
+-->
+
+-->
