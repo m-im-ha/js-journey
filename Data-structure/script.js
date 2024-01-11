@@ -1129,5 +1129,5 @@ const restaurant = {
   }
 };
 
-
+console.log(" world ".trim());
 
