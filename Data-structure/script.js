@@ -1130,43 +1130,5 @@ const restaurant = {
 };
 
 
-// console.log("padStart".length);
-// console.log("padStart".padStart(10,"*"));
-// console.log("padEnd".length);
-// console.log("padEnd".padEnd(10,"*"));
-// console.log("abcdefghijkl".slice(-4));
-
-// const task = {animal:"cow",planet : "earth"};
-// console.log(task);
-// console.log([task]);
-// console.log(...[task]);
-// console.log(Object.keys(task));
-// console.log(Object.values(task));
-// const [a,b] = Object.entries(task);
-// console.log(a);
-// console.log(b);
-// console.log(...[a,b]);
-// const oToM = new Map(Object.entries(task));
-// console.log(oToM);
-// console.log(...oToM);
-
-// const mapTask = new Map([
-//   ["animal","cow"],
-//   ["planet","earth"],
-//   ["enrgy","sun"],
-// ]);
-// console.log(mapTask);
-// console.log([mapTask]);
-// console.log(...[mapTask]);
-// console.log([...mapTask]);
-// console.log(...[...mapTask]);
-// console.log(...mapTask);
-// console.log(...mapTask.keys());
-// console.log(...mapTask.values());
-// console.log(mapTask.get("animal"));
-// for (let x of mapTask) console.log(x);
-// console.log(Object.fromEntries(mapTask));
-
-
 
 
