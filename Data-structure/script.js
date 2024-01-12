@@ -1130,5 +1130,24 @@ const restaurant = {
 };
 
 
+restaurant.orderDelivery({
+  time: '22:30',
+  address: 'Via del sole,21',
+  mainIndex: 2,
+  starterIndex: 2,
+});
+restaurant.orderDelivery({
+  address: 'Via del sole,21',
+  mainIndex: 1,
+});
 
+console.log(restaurant);
+
+// console.log(restaurant.name);
+// let restaurantCopy = restaurant;
+// let restaurantCopy = {...restaurant};
+// console.log(restaurantCopy);
+// restaurantCopy.name = "Res To Ara"
+// console.log(restaurant.name);
+// console.log(restaurantCopy.name);
 
