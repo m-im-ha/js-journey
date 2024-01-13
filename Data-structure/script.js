@@ -1141,7 +1141,7 @@ restaurant.orderDelivery({
   mainIndex: 1,
 });
 
-console.log(restaurant);
+// console.log(restaurant);
 
 // console.log(restaurant.name);
 // let restaurantCopy = restaurant;
@@ -1150,4 +1150,8 @@ console.log(restaurant);
 // restaurantCopy.name = "Res To Ara"
 // console.log(restaurant.name);
 // console.log(restaurantCopy.name);
+
+
+
+
 
