@@ -21,30 +21,33 @@
 // bookTickets('Lgy22');
 // bookTickets('Lgy22', 2);
 // bookTickets('Hgy921', 4, 589);
+
 //skipping default parameter and leaving it as it's default by using undefined
 // bookTickets('Hgy921', undefined, 1189);
 
-// const flight = 'LHT56';
-// const shahed = {
-//   personName: 'Shahed Alam',
-//   passport: 897653843,
-// };
-// const checkIn = function (flightNum, passenger) {
-//   flightNum = 'GTY99';
-//   passenger.personName = 'Mr. ' + passenger.personName;
+const flight = 'LHT56';
+const shahed = {
+  personName: 'Shahed Alam',
+  passport: 897653843,
+};
+const checkIn = function (flightNum, passenger) {
+  flightNum = 'GTY99';
+  passenger.personName = 'Mr. ' + passenger.personName;
+  console.log(flightNum);
+  console.log(passenger.personName);
 
-//   if (passenger.passport === 897653843) {
-//     alert('checked in');
-//   } else {
-//     alert('you need to wait');
-//   }
-// };
-// checkIn(flight, shahed);
-// console.log(flight);
-// console.log(shahed);
+  if (passenger.passport === 897653843) {
+    console.log('checked in');
+  } else {
+    console.log('you need to wait');
+  }
+};
+checkIn(flight, shahed);
+console.log(flight);
+console.log(shahed);
 
-// const flightNum = flight;
-// const passenger = shahed;
+//in summary, passing a primitive type to a function is really just the same as creating a copy like this(const flightNum = flight), outside of th function. So the value is simply copied. On the other hand, when we pass an object to  function, it is really just like copying an object like this(const passenger = shahed). And so whatever we change in a copy will also happen in the original.
+
 
 // const newPassport = function (person) {
 //   person.passport = Math.trunc(Math.random * 10000000);
@@ -63,7 +66,7 @@
 //   console.log(...others);
 //   return [first.toUpperCase(), ...others].join(' ');
 // };
-//this is higher order function.
+// this is higher order function.
 // const transformer = function (str, fn) {
 //   console.log(`Original String: ${str}`);
 //   console.log(`Transformed String: ${fn(str)}`);
@@ -75,10 +78,10 @@
 
 //.......................................practice.....................................
 
-// const add = function (a, b) {
+// const add = function (a,b) { // works even no parameters(a,b)
 //   return 1 + 1;
 // };
-// // higher order function
+// higher order function
 // const total = function (x, fn) {
 //   console.log(x + fn(x));
 // };
@@ -325,3 +328,27 @@
 
 //...........................PRACTICE
 
+// const module = {
+//   x: 42,
+//   getX: function () {
+//     console.log(this);
+//     console.log(this.x);
+//     return this.x;
+//   },
+// };
+
+// const unboundGetX = module.getX;
+// console.log(unboundGetX());
+
+// const book = [];
+// const createBooking = function(ticket,passengerNumber=12,price=290*passengerNumber){
+//     const booking = {
+//         ticket,
+//         passengerNumber,
+//         price,
+//     }
+//     console.log(booking);
+//     book.push(booking);
+// }
+// createBooking("23EWQ");
+// console.log(book);
