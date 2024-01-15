@@ -25,26 +25,26 @@
 //skipping default parameter and leaving it as it's default by using undefined
 // bookTickets('Hgy921', undefined, 1189);
 
-const flight = 'LHT56';
-const shahed = {
-  personName: 'Shahed Alam',
-  passport: 897653843,
-};
-const checkIn = function (flightNum, passenger) {
-  flightNum = 'GTY99';
-  passenger.personName = 'Mr. ' + passenger.personName;
-  console.log(flightNum);
-  console.log(passenger.personName);
+// const flight = 'LHT56';
+// const shahed = {
+//   personName: 'Shahed Alam',
+//   passport: 897653843,
+// };
+// const checkIn = function (flightNum, passenger) {
+//   flightNum = 'GTY99';
+//   passenger.personName = 'Mr. ' + passenger.personName;
+//   console.log(flightNum);
+//   console.log(passenger.personName);
 
-  if (passenger.passport === 897653843) {
-    console.log('checked in');
-  } else {
-    console.log('you need to wait');
-  }
-};
-checkIn(flight, shahed);
-console.log(flight);
-console.log(shahed);
+//   if (passenger.passport === 897653843) {
+//     console.log('checked in');
+//   } else {
+//     console.log('you need to wait');
+//   }
+// };
+// checkIn(flight, shahed);
+// console.log(flight);
+// console.log(shahed);
 
 //in summary, passing a primitive type to a function is really just the same as creating a copy like this(const flightNum = flight), outside of th function. So the value is simply copied. On the other hand, when we pass an object to  function, it is really just like copying an object like this(const passenger = shahed). And so whatever we change in a copy will also happen in the original.
 
@@ -340,15 +340,17 @@ console.log(shahed);
 // const unboundGetX = module.getX;
 // console.log(unboundGetX());
 
-// const book = [];
-// const createBooking = function(ticket,passengerNumber=12,price=290*passengerNumber){
-//     const booking = {
-//         ticket,
-//         passengerNumber,
-//         price,
-//     }
-//     console.log(booking);
-//     book.push(booking);
-// }
-// createBooking("23EWQ");
-// console.log(book);
+function increament(){
+  let increase = 0;
+
+  return function(){
+    increase++;
+    console.log(increase);
+  }
+}
+const output = increament();
+output();
+output();
+output();
+
+
