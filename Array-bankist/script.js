@@ -324,30 +324,7 @@ const accounts = [account1, account2, account3, account4];
 
 //.........................Map  ==>  map method does not change the original array.
 
-// you can also see
-// that the original movements array
-// was not mutated at all right?
-// And so indeed the map method really only returns
-// in new array with the new elements.Now you could say, that what we did here
-// with this map method is essentially the same
-// as what we did with the, foreach method.
-// But in fact, there is a big, big difference
-// between these two approaches.
-// So before we printed each line individually
-// to the console, as we were looping over the array.
-// So in each of the iterations, we performed some action
-// that was then visible in the console
-// and we can call this a side effect.
-// So the, foreach method creates side effects.
-// But now here with this map method,
-// all we did was to return each
-// of the strings from the callback.
-// And so basically they got added into a new array.
-// And then finally we logged that entire array
-// to the console and not the elements one by one.
-// And so here in this map method
-// we did not create a side effect in each of the iteration.
-// All we did was to build a brand new array
+// you can also see that the original movements array was not mutated at all right? And so indeed the map method really only returns in new array with the new elements.Now you could say, that what we did here with this map method is essentially the same as what we did with the foreach method. But in fact, there is a big, big difference between these two approaches. So before we printed each line individually to the console, as we were looping over the array. So in each of the iterations, we performed some action that was then visible in the console and we can call this a side effect. So the, foreach method creates side effects. But now here with this map method, all we did was to return each of the strings from the callback. And so basically they got added into a new array. And then finally we logged that entire array to the console and not the elements one by one. And so here in this map method we did not create a side effect in each of the iteration. All we did was to build a brand new array.
 
 // const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 // const eurToUsd = 1.1;
@@ -468,6 +445,7 @@ const accounts = [account1, account2, account3, account4];
 //   if (x.owner === 'Jessica Davis') accObj = x;
 // }
 // console.log(accObj);
+
 // //another way
 // let accObject;
 // for (const x of accounts) {
@@ -653,6 +631,8 @@ const accounts = [account1, account2, account3, account4];
 //  prefixed ++ operator
 // let a = 10;
 // console.log(++a);
+// console.log(a);
+// console.log(a++);
 // console.log(a);
 
 //3
@@ -909,5 +889,6 @@ const accounts = [account1, account2, account3, account4];
 // ]);
 
 /////////////////////////////////////////////////
+
 
 
