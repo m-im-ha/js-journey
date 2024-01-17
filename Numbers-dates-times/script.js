@@ -645,10 +645,7 @@ btnSort.addEventListener('click', function (e) {
 //conversion
 
 // console.log(Number('23'));
-// console.log(+'23'); //when JavaScript sees the plus operator,
-// it will do type coercion.
-// So it will automatically convert all
-// the operands to numbers.
+// console.log(+'23'); //when JavaScript sees the plus operator, it will do type coercion. So it will automatically convert all the operands to numbers.
 // Remember every function is also an object.
 
 // parsing
@@ -941,13 +938,5 @@ const account2 = {
 };
 
 const accounts = [account1, account2];
+console.log(accounts);
 
-
-// setInterval(()=>{
-
-//   const time = new Date();
-//   const hr = time.getHours();
-//   const mins = time.getMinutes();
-//   const secs = time.getSeconds();
-//   console.log(`${hr}: ${mins}: ${secs}`);
-// },5000);
