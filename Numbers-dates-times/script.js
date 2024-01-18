@@ -674,8 +674,7 @@ btnSort.addEventListener('click', function (e) {
 // console.log(Number.isFinite(+'23X'));
 // console.log(Number.isFinite(23 / 0));
 
-//isInteger
-
+//...............isInteger
 // console.log(Number.isInteger('23'));
 // console.log(Number.isInteger(23));
 // console.log(Number.isInteger(+'23X'));
@@ -705,7 +704,9 @@ btnSort.addEventListener('click', function (e) {
 
 //rounding integers
 
-// console.log(Math.trunc(23.3));
+// console.log(Math.trunc(23.53));
+// console.log(Math.trunc(23.43));
+// console.log(Math.trunc(23.93));
 // console.log(Math.trunc(-23.3));
 
 // console.log('----round-------');
@@ -740,6 +741,18 @@ btnSort.addEventListener('click', function (e) {
 // console.log(isEven(4));
 // console.log(isEven(13));
 // console.log(isEven(22));
+
+//....another way
+// function isEven(num){
+//   const evenNum = Array.from({length:num},(_,i)=>2*i);
+//   console.log(evenNum);
+//   if(evenNum.includes(num)) return true;
+//   else return false;
+// }
+// console.log(isEven(2));
+// console.log(isEven(3));
+// console.log(isEven(4));
+// console.log(isEven(5));
 
 // So whenever you need to do something every Nth time,then it is a good idea to use the remainder operator for that.So here for example, every second time, every third time...
 
@@ -865,8 +878,7 @@ btnSort.addEventListener('click', function (e) {
 //   new Intl.NumberFormat('bn-BD', options).format(num)
 // );
 
-// const ingredients = ['ricotta', 'monterey'];
-
+const ingredients = ['ricotta', 'monterey'];
 //          setTimeout
 
 // setTimeout(
@@ -879,7 +891,7 @@ btnSort.addEventListener('click', function (e) {
 // const pizzaTimer = setTimeout(
 //   (ing1, ing2) =>
 //     console.log(`Here is your another pizza 🍕 with ${ing1} and ${ing2}.`),
-//   6000,
+//   3000,
 //   'ricotta',
 //   'monterey'
 // );
@@ -937,6 +949,4 @@ const account2 = {
   locale: 'en-US',
 };
 
-const accounts = [account1, account2];
-console.log(accounts);
 
