@@ -1213,3 +1213,82 @@ kate.calcAge();
 
 // crow.onTheTree = 70;
 
+// const animalProto = {
+//   calcNum(){
+//     console.log(500 - this.animal_num);
+//   },
+
+//   init(first_name,animal_num){
+//     this.first_name = first_name;
+//     this.animal_num = animal_num;
+//   }
+// }
+// const tiger = Object.create(animalProto);
+// console.log(tiger);
+// tiger.first_name = 'Tiger KING!';
+// tiger.animal_num = 1;
+// tiger.calcNum();
+
+// const lion = Object.create(animalProto);
+// lion.init('Lion KING',20);
+// console.log(lion);
+// lion.calcNum();
+
+// const Person = function(first_name,birthYear){
+//   this.first_name = first_name;
+//   this.birthYear = birthYear;
+// }
+
+// Person.prototype.calcAge = function(){
+//   console.log(2067 - this.birthYear);
+// }
+
+// const Student = function(first_name,birthYear,course) {
+//   console.log(this);
+//   Person.call(this,first_name,birthYear);
+//   this.course = course;
+// }
+// Student.prototype = Object.create(Person.prototype);
+
+// Student.prototype.intro = function(){
+//   console.log(`My name is ${this.first_name}, I'm taking ${this.course}.`);
+// }
+// const jermy = new Student('JERMY',2000,'EEE');
+// console.log(jermy);
+// jermy.intro();
+// jermy.calcAge();
+// console.log(jermy.__proto__);
+// console.log(jermy.__proto__.__proto__);
+// console.log(jermy.__proto__.__proto__.__proto__);
+// console.log(jermy.__proto__.__proto__.__proto__.__proto__);
+// console.dir(Student.prototype.constructor);
+// Student.prototype.constructor = Student;
+// console.dir(Student.prototype.constructor);
+// console.log(jermy instanceof Person);
+// console.log(jermy instanceof Student);
+
+class PersonCl {
+  constructor(firstName,birthYear){
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+  }
+
+  calcAge(){
+    console.log(2067 - this.birthYear);
+  }
+}
+
+class StudentCl extends PersonCl {
+  constructor(firstName,birthYear,course){
+    super(firstName,birthYear);
+    this.course = course;
+  }
+
+  intro(){
+    console.log(`My name is ${this.firstName}, I'm taking ${this.course}.`);
+  }
+}
+
+const kenshin = new StudentCl('KENSHIN',2000,'SAMURAI');
+kenshin.intro();
+
