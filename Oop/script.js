@@ -1080,66 +1080,93 @@ kate.introduce();
 kate.calcAge();
 */
 
-class Account  {
+// class Account  {
   //Public Field
-  locale = navigator.language;
+  // locale = navigator.language;
   
   //Private Field
-  #movements = [];
-  #pin;
+  // #movements = [];
+  // #pin;
 
-  constructor(owner,currency,pin) {
-    this.owner = owner;
-    this.currency = currency;
+  // constructor(owner,currency,pin) {
+  //   this.owner = owner;
+  //   this.currency = currency;
     // Protected Property
-    this.#pin = pin;
+    // this.#pin = pin;
     // this._movements = [];
     // this.locale = navigator.language;
-  }
+  // }
 
-  deposit(mov) {
-    this.#movements.push(mov);
-    return this;
-  }
+  // deposit(mov) {
+  //   this.#movements.push(mov);
+  //   return this;
+  // }
 
-  withdrawal(mov) {
-    this.deposit(-mov);
-    return this;
-  }
+  // withdrawal(mov) {
+  //   this.deposit(-mov);
+  //   return this;
+  // }
 
-  #approval(mov){
-    return true;
-  }
+  // #approval(mov){
+  //   return true;
+  // }
 
-  requestLoan(mov){
-    if(this.#approval){
-      this.deposit(mov);
-      console.log(`request accepted`);
-      return this;
-    }
-  }
+  // requestLoan(mov){
+  //   if(this.#approval){
+  //     this.deposit(mov);
+  //     console.log(`request accepted`);
+  //     return this;
+  //   }
+  // }
 
   //Public Interface
-  getMovements() {
-    return this.#movements;
-  }
+//   getMovements() {
+//     return this.#movements;
+//   }
 
-  static helper() {
-    console.log(`helper`);
-  }
-}
+//   static helper() {
+//     console.log(`helper`);
+//   }
+// }
 
-const ruby = new Account('Ruby','Dollar',111);
-ruby.deposit(100);
-ruby.withdrawal(200);
-ruby.deposit(300);
-ruby.requestLoan(9999);
+// const ruby = new Account('Ruby','Dollar',111);
+// ruby.deposit(100);
+// ruby.withdrawal(200);
+// ruby.deposit(300);
+// ruby.requestLoan(9999);
 // ruby.#approval(789);
 
-console.log(ruby.getMovements());
+// console.log(ruby.getMovements());
 // ruby.#pin;
 // console.log(ruby.#approval(233));
 // ruby.helper();
 // Account.helper();
-ruby.deposit(222).withdrawal(333).deposit(444).requestLoan(654);
-console.log(ruby);
+// ruby.deposit(222).withdrawal(333).deposit(444).requestLoan(654);
+// console.log(ruby);
+
+const Animal = function(first_animal,animal_num){
+  this.first_animal = first_animal;
+  this.animal_num = animal_num;
+}
+
+const tiger = new Animal('TIGER',5);
+console.log(tiger);
+
+const cow = new Animal("COW",10);
+const goat = new Animal("GOAT",15);
+console.log(cow,goat);
+console.log(tiger instanceof Animal);
+
+Animal.prototype.calcNum = function(){
+  console.log(100 - this.animal_num);
+}
+tiger.calcNum();
+cow.calcNum();
+goat.calcNum();
+console.log(Animal.prototype);
+console.log(tiger.__proto__);
+console.log(tiger.__proto__.__proto__);
+console.log(tiger.__proto__.__proto__.__proto__);
+
+Animal.prototype.legs = 4;
+console.log(tiger,cow,goat);
