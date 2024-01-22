@@ -1144,29 +1144,72 @@ kate.calcAge();
 // ruby.deposit(222).withdrawal(333).deposit(444).requestLoan(654);
 // console.log(ruby);
 
-const Animal = function(first_animal,animal_num){
-  this.first_animal = first_animal;
-  this.animal_num = animal_num;
-}
+// const Animal = function(first_animal,animal_num){
+//   this.first_animal = first_animal;
+//   this.animal_num = animal_num;
+// }
 
-const tiger = new Animal('TIGER',5);
-console.log(tiger);
+// const tiger = new Animal('TIGER',5);
+// console.log(tiger);
 
-const cow = new Animal("COW",10);
-const goat = new Animal("GOAT",15);
-console.log(cow,goat);
-console.log(tiger instanceof Animal);
+// const cow = new Animal("COW",10);
+// const goat = new Animal("GOAT",15);
+// console.log(cow,goat);
+// console.log(tiger instanceof Animal);
 
-Animal.prototype.calcNum = function(){
-  console.log(100 - this.animal_num);
-}
-tiger.calcNum();
-cow.calcNum();
-goat.calcNum();
-console.log(Animal.prototype);
-console.log(tiger.__proto__);
-console.log(tiger.__proto__.__proto__);
-console.log(tiger.__proto__.__proto__.__proto__);
+// Animal.prototype.calcNum = function(){
+//   console.log(100 - this.animal_num);
+// }
+// tiger.calcNum();
+// cow.calcNum();
+// goat.calcNum();
+// console.log(Animal.prototype);
+// console.log(tiger.__proto__);
+// console.log(tiger.__proto__.__proto__);
+// console.log(tiger.__proto__.__proto__.__proto__);
 
-Animal.prototype.legs = 4;
-console.log(tiger,cow,goat);
+// Animal.prototype.legs = 4;
+// console.log(tiger,cow,goat);
+// console.dir(Animal.prototype.constructor);
+
+// const arr = [1,2,3,3,3,3,4,5];
+
+// Array.prototype.unique = function(){
+//   console.log(this);
+//   return [...new Set(this)];
+// }
+// console.log(arr.unique());
+
+// class Bird {
+//   constructor(birdName,numOfbird){
+//     this.birdName = birdName;
+//     this.numOfbird = numOfbird;
+//   }
+//   calcBird(){
+//     console.log(500 - this.numOfbird);
+//   }
+//   greet(){
+//     console.log(`Hey, I'm ${this.birdName}.`);
+//   }
+//   static hey(){
+//     console.log(`hey there....`);
+//   }
+//   get onTheSky(){
+//     return this.numOfbird + 5;
+//   }
+//   set onTheTree(amount){
+//     console.log(this.numOfbird - amount);;
+//   }
+// }
+
+// const crow = new Bird('CROW',100);
+// console.log(crow);
+// crow.calcBird();
+
+// crow.greet();
+// Bird.hey();
+
+// console.log(crow.onTheSky);
+
+// crow.onTheTree = 70;
+
