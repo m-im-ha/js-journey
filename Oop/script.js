@@ -1267,28 +1267,56 @@ kate.calcAge();
 // console.log(jermy instanceof Person);
 // console.log(jermy instanceof Student);
 
-class PersonCl {
-  constructor(firstName,birthYear){
-    this.firstName = firstName;
-    this.birthYear = birthYear;
-  }
+// class PersonCl {
+//   constructor(firstName,birthYear){
+//     this.firstName = firstName;
+//     this.birthYear = birthYear;
+//   }
 
-  calcAge(){
-    console.log(2067 - this.birthYear);
-  }
-}
+//   calcAge(){
+//     console.log(2067 - this.birthYear);
+//   }
+// }
 
-class StudentCl extends PersonCl {
-  constructor(firstName,birthYear,course){
-    super(firstName,birthYear);
-    this.course = course;
-  }
+// class StudentCl extends PersonCl {
+//   constructor(firstName,birthYear,course){
+//     super(firstName,birthYear);
+//     this.course = course;
+//   }
 
-  intro(){
-    console.log(`My name is ${this.firstName}, I'm taking ${this.course}.`);
-  }
-}
+//   intro(){
+//     console.log(`My name is ${this.firstName}, I'm taking ${this.course}.`);
+//   }
+// }
 
-const kenshin = new StudentCl('KENSHIN',2000,'SAMURAI');
-kenshin.intro();
+// const kenshin = new StudentCl('KENSHIN',2000,'SAMURAI');
+// kenshin.intro();
+
+// const PersonProto = {
+//   calcAge(){
+//     console.log(2067 - this.birthYear);
+//   },
+//   init(firstName,birthYear){
+//     this.firstName = firstName;
+//     this.birthYear = birthYear;
+//   }
+// }
+// const jenny = Object.create(PersonProto);
+// jenny.init('JENNY',2001);
+// jenny.calcAge();
+// console.log(jenny);
+// const StudentProto = Object.create(PersonProto);
+// StudentProto.init = function(firstName,birthYear,course) {
+//   PersonProto.init.call(this,firstName,birthYear);
+//   this.course = course;
+// }
+// StudentProto.intro = function(){
+//   console.log(`Hello, I'm ${this.firstName}, remember my name.`);
+// }
+
+// const pablo = Object.create(StudentProto);
+// pablo.init('PABLO',2000,'RRR');
+// pablo.calcAge();
+// pablo.intro();
+// console.log(pablo);
 
