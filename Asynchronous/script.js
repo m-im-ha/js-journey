@@ -608,8 +608,8 @@ loadAll(['img/img-1.jpg','img/img-2.jpg','img/img-3.jpg'])
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////
 
-const btn = document.querySelector('.btn-country');
-const countriesContainer = document.querySelector('.countries');
+// const btn = document.querySelector('.btn-country');
+// const countriesContainer = document.querySelector('.countries');
 /*
 const getCountryData = function (country) {
   const request = new XMLHttpRequest();
@@ -945,33 +945,33 @@ whereAmI(-33.933, 18.474);
 //   })
 //   .catch(err => console.error(err));
 
-const renderCountry = function (data, className = '') {
+// const renderCountry = function (data, className = '') {
   // console.log(data);
-  const languages = Object.values(data.languages);
-  const currencies = Object.values(data.currencies);
+  // const languages = Object.values(data.languages);
+  // const currencies = Object.values(data.currencies);
   // console.log(languages,currencies[0].name);
-  const html = `
-<article class="country ${className}">
-  <img class="country__img" src="${data.flags.svg}" />
-  <div class="country__data">
-    <h3 class="country__name">${data.name.common}</h3>
-    <h4 class="country__region">${data.region}</h4>
-    <p class="country__row"><span>👫</span>${(
-      +data.population / 1000000
-    ).toFixed(1)} million</p>
-    <p class="country__row"><span>🗣️</span>${languages[0]}</p>
-    <p class="country__row"><span>💰</span>${currencies[0].name}</p>
-  </div>
-</article>`;
+//   const html = `
+// <article class="country ${className}">
+//   <img class="country__img" src="${data.flags.svg}" />
+//   <div class="country__data">
+//     <h3 class="country__name">${data.name.common}</h3>
+//     <h4 class="country__region">${data.region}</h4>
+//     <p class="country__row"><span>👫</span>${(
+//       +data.population / 1000000
+//     ).toFixed(1)} million</p>
+//     <p class="country__row"><span>🗣️</span>${languages[0]}</p>
+//     <p class="country__row"><span>💰</span>${currencies[0].name}</p>
+//   </div>
+// </article>`;
 
-  countriesContainer.insertAdjacentHTML('beforeend', html);
-  countriesContainer.style.opacity = '1';
-};
+//   countriesContainer.insertAdjacentHTML('beforeend', html);
+//   countriesContainer.style.opacity = '1';
+// };
 
-const renderError = function (msg) {
-  countriesContainer.insertAdjacentText('beforeend', msg);
-  countriesContainer.style.opacity = 1;
-};
+// const renderError = function (msg) {
+//   countriesContainer.insertAdjacentText('beforeend', msg);
+//   countriesContainer.style.opacity = 1;
+// };
 
 // const getPosition = function () {
 //   return new Promise(function (res, rej) {
@@ -1033,13 +1033,13 @@ const renderError = function (msg) {
 //   x = 9;
 // } catch(err){alert(err.message)}
 
-const getJson = function (url, errorMsg = 'Something wrong') {
-  return fetch(`${url}`).then(response => {
-    // console.log(response);
-    if (!response.ok) throw new Error(`${errorMsg} ${response.status}.`);
-    return response.json();
-  });
-};
+// const getJson = function (url, errorMsg = 'Something wrong') {
+//   return fetch(`${url}`).then(response => {
+//     // console.log(response);
+//     if (!response.ok) throw new Error(`${errorMsg} ${response.status}.`);
+//     return response.json();
+//   });
+// };
 
 // const get3Countries = async function(c1,c2,c3){
 //   try{
@@ -1161,3 +1161,16 @@ const getJson = function (url, errorMsg = 'Something wrong') {
 //   }
 // };
 // loadAll(['img/img-1.jpg', 'img/img-2.jpg', 'img/img-3.jpg']);
+
+/////////////////////////////////////
+//////////////////////////////////////////////
+//////////////////////////////////////
+
+// async function pokemon_data(pokemon) {
+//   let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
+//   let data = await response.json().then(data=>
+//     {console.log(data);
+//     console.log(data.sprites.front_shiny)});
+//   return data;
+// }
+// pokemon_data("ho-oh");
