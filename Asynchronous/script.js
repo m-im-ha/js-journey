@@ -1166,11 +1166,12 @@ whereAmI(-33.933, 18.474);
 //////////////////////////////////////////////
 //////////////////////////////////////
 
-// async function pokemon_data(pokemon) {
-//   let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
-//   let data = await response.json().then(data=>
-//     {console.log(data);
-//     console.log(data.sprites.front_shiny)});
-//   return data;
-// }
-// pokemon_data("ho-oh");
+async function pokemon_data(pokemon) {
+  let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
+  console.log(response);
+  let data = await response.json().then(data=>
+    {console.log(data);
+    console.log(data.sprites.front_shiny)});
+  return data;
+}
+pokemon_data("ho-oh");

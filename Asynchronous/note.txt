@@ -1,0 +1,5 @@
+Whenever a user declares a function with the async keyword in its declaration, it automatically implies a fact that this function or a method is ready to receive all of the asynchronous events on itself.
+After this, we generally use await keyword which then waits for the results and then fetches it successfully.
+After that, we store the fetched result in some random variable then display the result or use that result for several other purposes as per the requirement.
+A function that uses Async/Await keywords will eventually hold their results for some little amount of time as compared with other normal functions.
+Upon successful completion, the result may be used for further data operations within the code itself or may be displayed on the browser’s console successfully.
